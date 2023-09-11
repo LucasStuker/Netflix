@@ -14,16 +14,17 @@ const Home = () => {
     getMovies();
   }, []);
   useEffect(() => {
-    console.log(movies);}, [movies]);
+    console.log(movies);
+  }, [movies]);
 
-  
   return (
     <section className="Home">
       {movies.map((movie) => (
         <div>
-        {movie.id}
-        {movie.title}
-        </div>))}
+          {movie.id}
+          {movie.title}
+        </div>
+      ))}
     </section>
   );
 };
